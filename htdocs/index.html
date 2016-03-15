@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+    <haed>
+        <title>My Todo List</title>
+        <link rel="stylesheet" src="css/main.css" type="text/css">
+        <script src="js/main.js"></script>
+        <script src="js/spa.shell.js"></script>
+        <script>
+            // see: DOMContentLoaded周りの処理を詳しく調べてみました
+            //      http://qiita.com/mamo/items/ff336b5cc0a1a95e03a7
+            document.addEventListener('DOMContentLoaded', function() {
+                spa.initModule( document.getElementById('spa') );
+            });
+        </script>
+    </haed>
+    <body>
+        <div id="spa"></div>
+    </body>
+</html>
